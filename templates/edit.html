@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <div class="post-preview">
+                        <form action="" method="POST">
+                          <label for="title">TITLE</label>
+                          <input type="text" name="title" value="{{ post.title}} ">
+                          <label for="body">Content</label>
+                          <input type="text" name="body" value="{{ post.body }}">
+                          <input type="submit" value="EDIT">
+                        </form>
+<!--                        <p class="post-meta">-->
+<!--                            Posted by <a href="#!">Mizuho</a> {{ post.created_at.strftime("%m-%d %H:%M") }}-->
+<!--                        </p>-->
+                    </div>
+
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                </div>
+            </div>
+        </div>
+{% endblock %}

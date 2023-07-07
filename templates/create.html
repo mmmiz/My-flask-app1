@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %} New post{% endblock %}
+{% block subtitle %}I love you Lincoln!{% endblock %}
+    {% block content %}
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <!-- Post preview-->
+                    <form action="/create" method="POST">
+                      <label>Title:</label><br>
+                      <input type="text" id="title" name="title" placeholder="Title here"><br>
+                      <label>Body:</label><br>
+                      <input type="body" id="body" name="body" placeholder="content here"><br><br>
+                      <input type="submit" value="Submit">
+                    </form>
+<!--                    <div class="post-preview">-->
+<!--                        <a href="post.html">-->
+<!--                            <h2 class="post-title">Post1</h2>-->
+<!--                            <h3 class="post-subtitle">i am mizuho.....</h3>-->
+<!--                        </a>-->
+<!--                        <p class="post-meta">-->
+<!--                            Posted by <a href="#!">Mizuho</a> on September 24, 2023-->
+<!--                        </p>-->
+<!--                    </div>-->
+
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Pager-->
+<!--                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">New POST →</a></div>-->
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
